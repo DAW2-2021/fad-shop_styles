@@ -1,26 +1,28 @@
 ////////////////////////////////////
 /// Colores
 ////////////////////////////////////
-
+$background: #efefef;
+$background-nav: #e8e8e8;
+$color1: #a5a6f6;
+$color1_dark: darken($color1, 5%);
 ////////////////////////////////////
 /// Modificaciones Variables Bootstrap
 ////////////////////////////////////
-$primary: #a5a6f6;
+$primary: $color1;
 $border-color: #7e7e7e;
 $dropdown-border-color: #7e7e7e;
 $dropdown-bg: lighten(#e8e8e8, 5%);
 
-//IMPORT BOOSTRAP
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+//IMPORT'S Librerias
+//-- Boostrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+//-- Owl Carousel
+@import '../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+//-- Global
+@import 'src/global';
 
 ////////////////////////////////////
 /// Modificaciones Clases
 ////////////////////////////////////
-body {
-  background-color: #efefef;
-  height: 200vh;
-}
-#navbar {
-  background-color: #e8e8e8;
-  transition: all 0.3s;
-}
+@import 'src/carousel';
+@import 'src/card';
