@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>Support</title>
+    <script>
+      $(document).ready(function() {
+        $("#motivo").hide();
+        $("#Select").on("change", function() {
+          if ($(this).val() == "Other") {
+            $("#motivo").show();
+          } else {
+            $("#motivo").hide();
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <div class="container-fluid">
+      <div class="p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Support</h1>
+        <p class="fs-5 text-muted">
+            You can contact us support for any kind of reason.
+        </p>
+      </div>
+      <div class="container-md container-fluid p-5 bg-secondary text-white rounded">
+        <form>
+          <div class="mb-3">
+            <label for="Select" class="form-label">Reasons</label>
+            <select id="Select" class="form-select">
+              <option>Returning an order</option>
+              <option>I have found a bug</option>
+              <option>Report</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="motivo"
+              placeholder="Specify a reason..."
+            />
+          </div>
+          <div class="form mb-3">
+            <textarea
+              type="text"
+              class="form-control"
+              id="motivo"
+              placeholder="Message..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
