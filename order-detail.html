@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link
+            rel="stylesheet"
+            href="/node_modules/bootstrap/dist/css/bootstrap.css"
+        />
+        <link rel="stylesheet" href="/styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="/node_modules/@fortawesome/fontawesome-free/css/all.css"
+        />
+        <title>Registrado</title>
+    </head>
+
+    <body>
+        <nav
+            class="py-2 py-lg-2 px-xl-4 navbar-light navbar-expand-sm border-bottom"
+            id="navbar"
+        >
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="text-center col-12 col-lg-2">
+                        <a
+                            href="#"
+                            class="navbar-brand link-dark fs-1 text-dark me-2"
+                        >
+                            FAD SHOP
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div
+                        class="collapse navbar-collapse col-lg-10 justify-content-center align-content-center"
+                        id="navbarSupportedContent"
+                    >
+                        <div class="col-sm-8">
+                            <div class="position-relative">
+                                <input
+                                    class="form-control me-2 search rounded-pill bg-primary ps-5 py-2 my-2 my-md-0"
+                                    type="search"
+                                    placeholder="Search"
+                                    aria-label="Search"
+                                />
+                                <span
+                                    class="position-absolute top-50 start-0 translate-middle-y ms-4 text-black-50"
+                                >
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div
+                            class="col-sm-4 ps-lg-5 pt-lg-0 py-3 py-md-0 d-flex justify-content-evenly align-items-center "
+                        >
+                            <div
+                                class="nav-item dropdown justify-content-evenly align-items-center"
+                            >
+                                <a
+                                    class="nav-link dropdown-toggle text-dark"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <i class="fas fa-user"></i> Username
+                                </a>
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Log Out</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="position-relative">
+                                <i class="fas fa-shopping-cart fs-4"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge border border-danger rounded-circle bg-danger p-2"
+                                >
+                                    <span>1</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="col-md text-center p-4">
+                <p class="h3">Order Details</p>
+            </div>
+            <div class="row">
+                <aside class="col-lg-9">
+                    <div class="card">
+                        <div class="table-responsive">
+                            <table
+                                class="table table-borderless table-shopping-cart"
+                            >
+                                <thead class="text-muted">
+                                    <tr class="small text-uppercase">
+                                        <th scope="col">Product</th>
+                                        <th scope="col" width="120">
+                                            Quantity
+                                        </th>
+                                        <th scope="col" width="120">Price</th>
+                                        <th
+                                            scope="col"
+                                            class="text-right d-none d-md-block"
+                                            width="200"
+                                        ></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <figure
+                                                class="itemside align-items-center"
+                                            >
+                                                <div class="aside">
+                                                    <img
+                                                        src=""
+                                                        class="img-thumbnail"
+                                                    />
+                                                </div>
+                                                <!-- arreglar las fotos en laravel -->
+                                                <figcaption class="info">
+                                                    <a
+                                                        href="#"
+                                                        class="title text-dark"
+                                                        data-abc="true"
+                                                        >Tshirt with round
+                                                        nect</a
+                                                    >
+                                                    <p class="text-muted small">
+                                                        SIZE: L <br />
+                                                        Brand: MAXTRA
+                                                    </p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <div class="price-wrap">
+                                                <var class="price">$10.00</var>
+                                                <small class="text-muted">
+                                                    $9.20 each
+                                                </small>
+                                            </div>
+                                        </td>
+                                        <td
+                                            class="text-right d-none d-md-block"
+                                        >
+                                            <button
+                                                class="btn btn-danger remove"
+                                            >
+                                                Remove
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure
+                                                class="itemside align-items-center"
+                                            >
+                                                <div class="aside">
+                                                    <img
+                                                        src="https://i.imgur.com/hqiAldf.jpg"
+                                                        class="img-sm"
+                                                    />
+                                                </div>
+
+                                                <figcaption class="info">
+                                                    <a
+                                                        href="#"
+                                                        class="title text-dark"
+                                                        data-abc="true"
+                                                        >Flower Formal
+                                                        T-shirt</a
+                                                    >
+                                                    <p class="text-muted small">
+                                                        SIZE: L <br />
+                                                        Brand: ADDA
+                                                    </p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <div class="price-wrap">
+                                                <var class="price">$15</var>
+                                                <small class="text-muted">
+                                                    $12 each
+                                                </small>
+                                            </div>
+                                        </td>
+                                        <td
+                                            class="text-right d-none d-md-block"
+                                        >
+                                            <button
+                                                class="btn btn-danger remove"
+                                            >
+                                                Remove
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <figure
+                                                class="itemside align-items-center"
+                                            >
+                                                <div class="aside">
+                                                    <img
+                                                        src="https://i.imgur.com/UwvU0cT.jpg"
+                                                        class="img-sm"
+                                                    />
+                                                </div>
+
+                                                <figcaption class="info">
+                                                    <a
+                                                        href="#"
+                                                        class="title text-dark"
+                                                        data-abc="true"
+                                                        >Printed White Tshirt</a
+                                                    >
+                                                    <p class="small text-muted">
+                                                        SIZE:M <br />
+                                                        Brand: Cantabil
+                                                    </p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <div class="price-wrap">
+                                                <var class="price">$9</var>
+                                                <small class="text-muted">
+                                                    $6 each</small
+                                                >
+                                            </div>
+                                        </td>
+                                        <td
+                                            class="text-right d-none d-md-block"
+                                        >
+                                            <button
+                                                class="btn btn-danger remove"
+                                            >
+                                                Remove
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </aside>
+                <!-- aside derecha -->
+                <aside class="col-lg-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label>Have coupon?</label>
+                                    <div class="input-group">
+                                        <input
+                                            type="text"
+                                            class="form-control coupon"
+                                            name=""
+                                            placeholder="Coupon code"
+                                        />
+                                        <span class="input-group-append">
+                                            <button
+                                                class="btn btn-primary btn-apply coupon"
+                                            >
+                                                Apply
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <dl class="dlist-align">
+                                <dt>Total price:</dt>
+                                <dd class="text-right ml-3">$69.97</dd>
+                            </dl>
+                            <dl class="dlist-align">
+                                <dt>Discount:</dt>
+                                <dd class="text-right text-danger ml-3">
+                                    - $10.00
+                                </dd>
+                            </dl>
+                            <dl class="dlist-align">
+                                <dt>Total:</dt>
+                                <dd class="text-right text-dark b ml-3">
+                                    <strong>$59.97</strong>
+                                </dd>
+                            </dl>
+                            <hr />
+                            <a
+                                href="#"
+                                class="btn btn-out btn-primary btn-square btn-main"
+                                data-abc="true"
+                            >
+                                Make Purchase
+                            </a>
+                            <a
+                                href="#"
+                                class="btn btn-out btn-success btn-square btn-main mt-2"
+                                data-abc="true"
+                                >Continue Shopping</a
+                            >
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- NO BORRAR  -->
+        <script src="/node_modules/jquery/dist/jquery.js"></script>
+        <script src="/node_modules/@popperjs/core/dist/umd/popper.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="/node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+        <script>
+            $(document).ready(function() {})
+        </script>
+    </body>
+</html>

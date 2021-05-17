@@ -5,12 +5,14 @@ $background: #efefef;
 $background-nav: #e8e8e8;
 $color1: #a5a6f6;
 $color1_dark: darken($color1, 5%);
+$color2: #e6eaee;
+$border: #7e7e7e;
 ////////////////////////////////////
 /// Modificaciones Variables Bootstrap
 ////////////////////////////////////
 $primary: $color1;
-$border-color: #7e7e7e;
-$dropdown-border-color: #7e7e7e;
+$border-color: $border;
+$dropdown-border-color: $border;
 $dropdown-bg: lighten(#e8e8e8, 5%);
 
 //IMPORT'S Librerias
@@ -25,4 +27,7 @@ $dropdown-bg: lighten(#e8e8e8, 5%);
 /// Modificaciones Clases
 ////////////////////////////////////
 @import 'src/carousel';
-@import 'src/card';
+@import 'src/cards';
+@import 'src/categories';
+@import 'src/shops';
+@import 'src/settings';
